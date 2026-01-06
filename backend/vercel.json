@@ -2,19 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "api/index.js",
+      "src": "backend/api/index.js",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "api/index.js"
+      "dest": "backend/api/index.js"
     }
-  ],
-  "env": {
-    "MONGO_URL": "@mongo_url",
-    "PORT": "5000"
-  }
+  ]
 }
-
