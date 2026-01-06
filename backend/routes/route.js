@@ -1,5 +1,13 @@
 const router = require("express").Router();
 
+// Health check / root route - useful for Vercel deployment checks
+router.get("/", (req, res) => {
+  return res.status(200).json({
+    ok: true,
+    message: "School Backend API connected successfully",
+  });
+});
+
 // const { adminRegister, adminLogIn, deleteAdmin, getAdminDetail, updateAdmin } = require('../controllers/admin-controller.js');
 
 const {
