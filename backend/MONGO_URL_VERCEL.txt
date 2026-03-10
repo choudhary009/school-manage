@@ -1,2 +1,0 @@
-mongodb+srv://choudharyusama908:1234usama@cluster0.t28gimi.mongodb.net/School?retryWrites=true&w=majority
-
